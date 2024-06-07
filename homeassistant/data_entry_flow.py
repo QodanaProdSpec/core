@@ -624,7 +624,7 @@ class FlowManager(abc.ABC, Generic[_FlowResultT, _HandlerT]):
         return results
 
 
-class FlowHandler(Generic[_FlowResultT, _HandlerT]):
+class FlowHandler(Generic[_FlowResultT, _HandlerT])
     """Handle a data entry flow."""
 
     _flow_result: type[_FlowResultT] = FlowResult  # type: ignore[assignment]
